@@ -24,11 +24,11 @@ app.engine('html', require('ejs').renderFile);
 // app.set('view engine', 'html');
 
 app.get('/', function(req, res) {
-	res.render('main.ejs');
+	res.render('index.ejs');
 });
 
-app.get('/app', function(req, res) {
-	res.render('app.ejs');
+app.get('/main', function(req, res) {
+	res.render('main.ejs');
 });
 
 var appEnv = cfenv.getAppEnv();
